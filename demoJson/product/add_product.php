@@ -63,6 +63,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $detail = $_REQUEST['detail'];
     $product = new Product($id, $name, $price, $image, $detail);
     DataProduct::addProduct($product);
-    header('location: home.php');
+    header('location:home.php');
 
 }

@@ -49,7 +49,7 @@ class Data
         if(self::checkLogin($user)){
             session_start();
             $_SESSION['username']= $username;
-            header('location: home.php');
+            header('location: product/home.php');
         }
         else{
             echo 'Please enter username and password!';
